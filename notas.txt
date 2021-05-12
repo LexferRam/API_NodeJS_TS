@@ -1,0 +1,10 @@
+Al igual de como se inicia un proyecto en node ejecutando "npm init -y"/ "npx tsc --init", con typescript tambien se debe 
+inicializar ejecutando: "npx typescript --init" (luego de haber instalado el modulo "npm i typescript -D"), este inicializacion 
+creara un archivo de configuracion : "tscconfig.json". en donde se pueden personalizar.
+
+NOTA: para cada libreria que se instala se debe instalar su complemento de TS, ejemplo: "npm i @types/express".
+==> todo los omdulos de typescript se deben instalr como depencias de desarrollo.
+
+PASOS PARA CONVERTIR EL CODIGO:
+1-npx tsc (para convertir el codigo de ts a js, hay que indicar donde queremos el archivo convertido de ts,en la opcion outdir)
+2-node dist/index.js (para iniciar el servidor con codigo convertido a js)
